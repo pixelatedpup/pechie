@@ -3,7 +3,7 @@ import Body from "./Body";
 
 const Page = () =>{
     return(
-        <div className="max-w-[1260px] mx-auto">
+        <div className="mx-[90px]">
             <Header/>
             <Body/>
         </div>
