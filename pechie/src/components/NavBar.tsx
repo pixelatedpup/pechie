@@ -12,7 +12,7 @@ type NavBarProps = {
 
 
 const NavBar = ({works=[], activeWorkName}:NavBarProps) =>{
-    const [active, setActive] = useState("")
+    const [active, setActive] = useState(works[0].name)
 
     const handleActive = (item:string) =>{
         setActive(item)
@@ -29,9 +29,9 @@ const NavBar = ({works=[], activeWorkName}:NavBarProps) =>{
                     <li>
                         <div onClick={() => {handleActive(work.name)}} className="flex flex-row ">
                             <div className="w-[33px] h-[33px]"></div>
-                            <div className={isActive? `w-[239px] h-[31px] text-black  bg-[var(--white)] hover:text-black  hover:bg-white border border-var[(--dark)]]` 
+                            <div className={isActive? `w-[239px] h-[31px] text-black  bg-[var(--white)] hover:text-black  hover:bg-white border border-var[(--dark)]] cursor-pointer` 
                                                         :
-                                                      `w-[239px] h-[31px] text-white  bg-[var(--dark)] hover:text-white  hover:bg-[var(--primary)] border border-var[(--dark)]]`}>
+                                                      `w-[239px] h-[31px] text-white  bg-[var(--dark)] hover:text-white  hover:bg-[var(--primary)] border border-var[(--dark)]] cursor-pointer`}>
                                 <h4 className="text-center">{work.name}</h4>
                             </div>
                         </div>

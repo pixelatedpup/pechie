@@ -23,7 +23,7 @@ const Content = ({title="Luna Comics",github,figma,deploy,tags}:ContentProps) =>
                 </div>
             </div>
             <div className="flex flex-col items-center gap-5 mt-[30px]">
-                <h2 className="text-white text-center">{title ?? "Luna Comics"}</h2>
+                <h2 className="text-white text-regular text-center">{title ?? "Luna Comics"}</h2>
                 <Button text="DEPLOY"/>
             </div>
 

@@ -32,7 +32,7 @@ const Button = ({text="", type="primary"}:ButtonProps) =>{
     }
     return(
         <>
-            <button onMouseEnter={onEnter} onMouseLeave={() => setDisplayText(text)} className={`${colorClass[type]} w-[118px] hover:w-[146px] h-[29px] rounded-xl ${colorClassHover[type]} transition-all duration-[300ms]`}>
+            <button onMouseEnter={onEnter} onMouseLeave={() => setDisplayText(text)} className={`${colorClass[type]} w-[118px] hover:w-[146px] h-[29px] rounded-xl ${colorClassHover[type]} transition-all duration-[300ms] cursor-pointer`}>
                 {displayText}
             </button>
         </>
