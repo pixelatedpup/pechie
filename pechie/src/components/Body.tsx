@@ -14,7 +14,6 @@ const Body = () =>{
                 <Route path="/works" element={<Works/>}></Route>
                 <Route path="/contact" element={<Contact/>}></Route>
                 <Route path="/info" element={<Info/>}></Route>
-
             </Routes>
         </>
     );

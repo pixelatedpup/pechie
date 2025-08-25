@@ -1,7 +1,14 @@
+import { NavLink } from "react-router-dom";
+
 const Header = () =>{
     return(
-        <div className="flex justify-end bg-white">
-            <h2 className="bg-black text-white rounded-xl px-[30px] py-[5px]">PECHIEDEV</h2>
+        <div className="flex justify-end bg-white ">
+            <NavLink to ="/">
+                <div className="border rounded-xl px-[30px] py-[5px] transition-all duration-[300ms]
+                                    hover:bg-white hover:border-black  hover:text-black hover:px-[32px]">
+                    <h2>PECHIEDEV</h2>
+                </div>
+            </NavLink>
         </div>
     );
 }
