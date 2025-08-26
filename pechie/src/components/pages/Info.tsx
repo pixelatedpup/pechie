@@ -3,15 +3,15 @@ const Info = () =>{
         <>
 
         <div className="flex flex-col gap-15">
-            <section className="flex flex-row justify-center border border-black w-full">
+            <section className="flex flex-row justify-center  w-full">
 
-                <article className="flex flex-1 justify-start border border-black">
+                <article className="flex flex-1 justify-start ">
                     <div className="w-[489px] h-[341px] bg-black rounded-xl">
 
                     </div>
                 </article>
 
-                <article className="flex flex-1 justify-end border border-black">
+                <article className="flex flex-1 justify-end ">
                     <div className="w-[227px] h-[341px] bg-black ">
 
                     </div>

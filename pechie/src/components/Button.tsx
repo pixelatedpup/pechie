@@ -7,10 +7,11 @@ type ButtonType = "primary" | "secondary" | "dark"
 interface ButtonProps{
     text?: string;
     type?: ButtonType;
+    auto?:boolean;
 }
 
 
-const Button = ({text="", type="primary"}:ButtonProps) =>{
+const Button = ({text="", type="primary" , auto=false}:ButtonProps) =>{
 
 
     const [displayText, setDisplayText] = useState(text);
@@ -32,8 +33,8 @@ const Button = ({text="", type="primary"}:ButtonProps) =>{
     }
     return(
         <>
-            <button onMouseEnter={onEnter} onMouseLeave={() => setDisplayText(text)} className={`${colorClass[type]} w-[118px] hover:w-[146px] h-[29px] rounded-xl ${colorClassHover[type]} transition-all duration-[300ms] cursor-pointer`}>
-                {displayText}
+            <button onMouseEnter={onEnter} onMouseLeave={() => setDisplayText(text)} className={`${colorClass[type]} ${auto ?`w-auto h-auto p-[15px] rounded-xl` : `w-[118px] hover:w-[146px] h-[29px] rounded-xl`} ${colorClassHover[type]} transition-all duration-[300ms] cursor-pointer`}>
+                <h3>{displayText}</h3>
             </button>
         </>
     )

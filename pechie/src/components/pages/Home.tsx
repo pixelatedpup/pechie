@@ -24,8 +24,8 @@ const Home = () =>{
 
             <article>
                 <div>
-                    <NavLink to="/works"><div className="border border-black w-[140px] h-[140px] rounded-xl
-                                                         hover:scale-[108%] hover:bg-black hover:text-white transition-all duration-[300ms]"></div></NavLink>
+                    <a href="https://github.com/pixelatedpup"><div className="border border-black w-[140px] h-[140px] rounded-xl
+                                                         hover:scale-[108%] hover:bg-black hover:text-white transition-all duration-[300ms]"></div></a>
                     <h2 className="text-center">GitHub</h2>
                 </div>
             </article>
