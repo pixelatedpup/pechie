@@ -6,7 +6,7 @@ interface DescriptionProps {
 
 const Description = ({children, custom}: PropsWithChildren<DescriptionProps>) => {
     return (
-        <div className={`bg-white rounded-xl ${custom?custom:"w-[650px] h-[280px]"}`}>
+        <div className={`bg-white rounded-xl ${custom?custom:"lg:w-[650px] h-auto w-auto"}`}>
             {children}
         </div>
     );

@@ -1,36 +1,70 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 interface NavProps{
     page?: string;
 }
 
 
-const Nav = ({page ="WORKS"}: NavProps) => {
+const Nav = ({page =""}: NavProps) => {
     const navigate = useNavigate();
+    const location = useLocation();
+
+    const [activeBox, setActiveBox] = useState(false)
+    const [enteredNav, setEnteredNav] = useState(false)
+
+
 
     const goHome = () =>{
         navigate('/')
     }
 
     const [expandBox, setExpandBox] = useState(false);
+
+    const navEnter = () => {
+        setEnteredNav(true)
+    }
+
+    useEffect(() => {
+        setEnteredNav(false);
+    },[location])
+    
     return(
+        
         <>
-            <article className="w-[207px] cursor-pointer" 
+        {page != "HOME" && 
+            <article className="w-[207px] md:w-full sm:w-full cursor-pointer" 
             onMouseEnter={()=> setExpandBox(true)}  
             onMouseLeave={()=> setExpandBox(false)} 
             onClick={goHome}>
-                    <div className="flex flex-col items-center ">
-                        <div className={`w-[89px] h-[89px] bg-[var(--primary)] transition-all duration-[300ms]
+                    <div 
+                    onMouseEnter={()=>setEnteredNav(true)} 
+                    onMouseLeave={()=>setEnteredNav(false)}
+                    className="flex flex-col items-center  transition-all duration-[300ms]">
+                        <div className={`lg:w-[90px] lg:h-[90px]
+                                         sm:w-[20px] sm:h-[20px]
+                                         md:w-[63px] md:h-[63px]
+                                        bg-[var(--primary)] transition-all duration-[300ms]
+                                        rounded-xl grid grid-cols-2 p-[12px] gap-[11px]
+                                        ${enteredNav && 'scale-[110%] bg-black border border-[var(--primary)]'}
+                                        
                                         ${expandBox?`w-[100px] h-[100px]`: ``}`}>
+                                        
+                                        <div className={`${page == "WORKS" || enteredNav? "bg-white": "bg-black"}`}></div>
+                                        <div className={`${page == "INFO"|| enteredNav ? "bg-white": "bg-black"}`}></div>
+                                        <div className={`${page == "GITHUB" || enteredNav ? "bg-white": "bg-black"}`}></div>
+                                        <div className={`${page == "CONTACT" || enteredNav ? "bg-white": "bg-black"}`}></div>
 
                         </div>
 
-                        <h1> {page}</h1>
+                        <div className={`${enteredNav && 'text-[var(--primary)]'} lg:text-[20px] text-[14px]`}> {page}</div>
                     </div>
             </article>
+        }
+
         </>
     );
+    
 }
 
 export default Nav;

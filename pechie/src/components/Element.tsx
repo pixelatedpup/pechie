@@ -4,11 +4,14 @@ interface ElementProps{
 
 }
 
-const Element = ({text=""}) =>{
+const Element = ({text="", image}:ElementProps) =>{
     return(
         <>
-            <div className="h-[70px]">
-                <img className="w-[48px] h-[48px]"></img>
+            <div className="flex flex-col items-center h-auto">
+                <img 
+                src={image}
+                alt={text}
+                className="w-[48px] h-[48px]"></img>
                 <h5>{text}</h5>
             </div>
         </>

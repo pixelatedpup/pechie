@@ -8,34 +8,57 @@ interface ContentProps{
     figma?:string;
     deploy?:string;
     tags?:string[];
+    description?: string;
 }
 
 
-const Content = ({title="Luna Comics",github,figma,deploy,tags}:ContentProps) =>{
+const Content = ({title="Luna Comics",github,figma,deploy, description,tags}:ContentProps) =>{
     return(
-        <div className="w-[742px] h-[804px] bg-black rounded-xl">
-            <div className="flex flex-row justify-center w-[600px] h-[286.5px] gap-[68px] pt-[61px] w-full h-auto">
+        <div className="flex flex-col w-auto lg:w-[742px] h-auto bg-black rounded-xl py-[50px]">
+            <div className="flex lg:flex-row flex-col items-center lg:justify-center w-[600px] h-[286.5px] gap-[68px] w-full h-auto">
                 <Thumbnail/>
-                <div className="flex flex-col h-[282px] justify-evenly" >
+                <div className="flex lg:flex-col flex-row lg:h-[282px] lg:justify-evenly h-auto " >
                     <Thumbnail custom="w-[108px] h-[77px]"/>
                     <Thumbnail custom="w-[108px] h-[77px]"/>
                     <Thumbnail custom="w-[108px] h-[77px]"/>
                 </div>
             </div>
-            <div className="flex flex-col items-center gap-5 mt-[30px]">
+            <div className="flex flex-col flex-1 items-center gap-[5px] mt-[20px] w-auto">
                 <h2 className="text-white text-regular text-center">{title ?? "Luna Comics"}</h2>
                 <Button text="DEPLOY"/>
             </div>
+                <section className="flex justify-center  mt-[33px] p-[30px]">
+                    <Description>
+                        <div className="flex flex-col gap-5 py-[20px] px-[20px]">
+                            <article className="flex flex-col gap-5">
+                                <h3 className="flex justify-start">Tools</h3>
+                                
+                                {tags && (
+                                <div className="flex justify-evenly ">
+                                    <ul className="flex items-center gap-5 flex-wrap">
+                                        {tags.map((tag) => (
+                                            <div className="px-[10px] bg-[#656565] rounded-xl text-white w-[98px] h-[22px] flex items-center justify-center" >
+                                                <li className="text-center " key={tag}>{tag}</li>
+                                            </div>
+                                        ))}
+                                    </ul>
+                                </div> 
+                                )}
+                            </article>
+                            <article>
+                                <h4>{description}</h4>
+                            </article>
+                            <article className="flex justify-center gap-5">
+                                <Button text="Github" type="dark"/>
+                                <Button text="Figma" type="secondary"/>
+                            </article>
+                        </div>
 
-            <div className="flex justify-center mt-[35px]">
-                <Description>
-                    <div className="p-[30px]">
-                        <h1>Tags</h1>
-                        <h4>Lorem ipsum dolor sit amet. Aut possimus consequatur ab omnis nostrum qui optio saepe aut exercitationem facilis qui dolorem officiis et omnis quia aut earum quia. Non consequuntur distinctio ad deserunt numquam ut minima dolor id unde esse! Non alias facilis et facere rerum ea doloribus saepe. Et numquam ducimus ad quibusdam omnis rem eveniet obcaecati.</h4>
-                    </div>
-                </Description>
-            </div>
-        </div>
+
+                    </Description>
+                </section>
+         </div>
+      
     )
 }
 

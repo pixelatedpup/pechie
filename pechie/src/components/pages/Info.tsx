@@ -1,28 +1,40 @@
+import Elements from "../Elements";
+import profile from "../../assets/Profile.png"
+
 const Info = () =>{
     return(
         <>
 
         <div className="flex flex-col gap-15">
-            <section className="flex flex-row justify-center  w-full">
+            <section className="flex lg:flex-row lg:gap-0 gap-10 flex-col-reverse  justify-center ">
 
-                <article className="flex flex-1 justify-start ">
-                    <div className="w-[489px] h-[341px] bg-black rounded-xl">
-
+                <article className="flex flex-1 ">
+                    <div className="lg:w-[489px] lg:h-[341px] w-auto h-auto bg-black rounded-xl p-[30px]">
+                        <p className="text-white">
+                            Hi, I’m Peter Chiemeka (PECHIE), a Computer Science graduate specializing in Frontend Software Engineering and UX/UI Design. Over the past two years, I’ve built projects using JavaScript, 
+                            TypeScript, Python, and C++, both during and after my studies. I’m curious, dedicated, and always ready to put in the effort to get things done.
+                            In my free time, I create illustrations inspired by music and shows, some of which have led to commissioned work. I’m also passionate about building music electronics with Arduino and C++.
+                            Currently, I work as a freelance software engineer, always eager to contribute my skills to deliver the best results for your projects. If you think I’m a good fit, feel free to reach out.
+                        </p>
                     </div>
                 </article>
 
-                <article className="flex flex-1 justify-end ">
+                <article className="flex flex-1 sm:justify-center md:justify-center">
                     <div className="w-[227px] h-[341px] bg-black ">
-
+                        <img src={profile}/>
                     </div>
                 </article>
 
 
             </section>
 
-            <section className="flex border border-black h-[66px]">
+            <section className="flex flex-col  h-auto">
                 <h2>Skills</h2>
-
+                <div className="flex lg:flex-row flex-col justify-evenly border border-black rounded-xl p-[20px]">
+                    <Elements tag="language"/>
+                    <Elements tag="other"/>
+                    <Elements tag="tool"/>
+                </div>
             </section>
 
             <section className="flex flex-col  h-auto gap-5">
