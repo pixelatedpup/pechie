@@ -1,47 +1,53 @@
-import { useState, useEffect} from "react";
-import arrow from "../assets/arrow.png"
+import { useState, useEffect } from "react";
+import arrow from "../assets/arrow.png";
 
 interface NavTopProps {
-    works: { name: string }[]; // should match your works array type
-    activeWorkName: string;
-    onSelect: (name: string) => void; // add this!
-    useIndex?: number;
+  works: { name: string }[];
+  activeWorkName: string;
+  onSelect: (name: string) => void;
+  useIndex?: number;
 }
- const [activeIndex, setActiveIndex] = useState(0)
-const NavTop = ({ works, activeWorkName, onSelect, useIndex=0 }: NavTopProps) => {
 
-        useEffect(()=>{
-            console.log(activeIndex);
-    },[activeIndex])
+const NavTop = ({ works, activeWorkName, onSelect, useIndex = 0 }: NavTopProps) => {
+  const [activeIndex, setActiveIndex] = useState(useIndex);
 
-    const handleNext = () => {
-            {activeIndex < works.length - 1 ?
-                setActiveIndex((prev) => (prev+1))
-                :setActiveIndex(0)
+  // keep Works.tsx in sync whenever activeIndex changes
+  useEffect(() => {
+    onSelect(works[activeIndex].name);
+  }, [activeIndex, works, onSelect]);
 
-            }
-            onSelect(works[activeIndex].name)
-            }
-    return (
+  const handleNext = () => {
+    setActiveIndex((prev) => (prev < works.length - 1 ? prev + 1 : 0));
+  };
+
+  const handlePrev = () => {
+    setActiveIndex((prev) => (prev > 0 ? prev - 1 : works.length - 1));
+  };
+
+  return (
+    <div className="flex flex-col">
         <div className="flex flex-row gap-5 justify-center">
+        {/* Prev Button */}
+            <div onClick={handlePrev} className="flex items-center cursor-pointer">
+                <img src={arrow} className="scale-x-[-1]" />
+            </div>
 
-                <div 
+            {/* Active work name */}
+            <div className="flex items-center">
+                <h1>{works[activeIndex].name}</h1>
+            </div>
 
-                onClick={handleNext}
-                className="flex items-center cursor-pointer">
-                    <img src={arrow} className="scale-x-[-1]"/>
-                </div>
-                <div className="flex items-center">
-                    <h1>{works[activeIndex].name}</h1>
-                </div>
-                <div 
-                onClick={handleNext}
-                className="flex items-center cursor-pointer">
-                    <img src={arrow} />
-                </div>
-            
+            {/* Next Button */}
+            <div onClick={handleNext} className="flex items-center cursor-pointer">
+                <img src={arrow} />
+            </div>
         </div>
-    );
+
+        <div className="flex justify-center text-[var(--primary)]">
+            {`${activeIndex + 1}/${works.length}`}
+        </div>
+    </div>
+  );
 };
 
 export default NavTop;

@@ -8,7 +8,7 @@ const Page = () =>{
         <div className="min-h-screen flex flex-col">
             <div className="">
                 <Header location={location.pathname}/>
-                <div className="max-w-[1075px] mx-auto pb-[50px] pt-[30px] md:mt-[80px] sm:mt-[80px] lg:px-[0px] px-[50px]" >
+                <div className="max-w-[1075px] mx-auto pb-[50px] pt-[30px] mt-[80px] lg:px-[0px] px-[50px]" >
                     <Body/>
                 </div>
             </div>
