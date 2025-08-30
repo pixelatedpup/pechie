@@ -15,12 +15,12 @@ interface ContentProps{
 const Content = ({title="Luna Comics",github,figma,deploy, description,tags}:ContentProps) =>{
     return(
         <div className="flex flex-col w-auto lg:w-[742px] h-auto bg-black rounded-xl py-[50px]">
-            <div className="flex lg:flex-row flex-col items-center lg:justify-center w-[600px] h-[286.5px] gap-[68px] w-full h-auto">
+            <div className="flex lg:flex-row flex-col items-center lg:justify-center w-[600px] h-[286.5px] gap-[20px] w-auto h-auto">
                 <Thumbnail/>
                 <div className="flex lg:flex-col flex-row lg:h-[282px] lg:justify-evenly h-auto " >
-                    <Thumbnail custom="w-[108px] h-[77px]"/>
-                    <Thumbnail custom="w-[108px] h-[77px]"/>
-                    <Thumbnail custom="w-[108px] h-[77px]"/>
+                    <Thumbnail custom="lg:w-[108px] lg:h-[77px] w-[77.142px] h-[55px]"/>
+                    <Thumbnail custom="lg:w-[108px] lg:h-[77px] w-[77.142px] h-[55px]"/>
+                    <Thumbnail custom="lg:w-[108px] lg:h-[77px] w-[77.142px] h-[55px]"/>
                 </div>
             </div>
             <div className="flex flex-col flex-1 items-center gap-[5px] mt-[20px] w-auto">

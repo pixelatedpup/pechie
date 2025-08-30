@@ -45,7 +45,7 @@ const Header = ({location = ""}) =>{
 
                 </section>
             </div>
-                <section className="fixed right-0 flex justify-end w-auto  pt-[60px] ">
+                <section className="fixed right-0 flex justify-end w-auto  pt-[60px] pr-[20px]">
     
                         <Nav page={textToUse}/>
 

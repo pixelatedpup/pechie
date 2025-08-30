@@ -9,7 +9,7 @@ const Home = () =>{
         <>
 
         <div className="flex justify-center items-center">
-        <section className=" grid grid-cols-2 w-[302px] h-[400px] pt-[180px] gap-y-10 gap-x-5">
+        <section className=" grid grid-cols-2 w-[302px] h-[400px]  gap-y-10 gap-x-5">
             <article>
                 <div >
                     <NavLink to="/works">
