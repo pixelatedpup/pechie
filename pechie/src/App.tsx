@@ -16,7 +16,7 @@ function App() {
     <>
       <BrowserRouter basename='/'>
         <Page/> 
-        {/* <h1>Hello</h1> */}
+        
       </BrowserRouter>
     </>
   )
