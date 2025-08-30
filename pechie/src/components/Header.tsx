@@ -31,25 +31,25 @@ const Header = ({location = ""}) =>{
     return(
         <>
         <div className="pr-[20px]">
-        <div className="flex right-0 items-center justify-end fixed  w-full bg-white h-auto z-50">
-            <section className=" flex justify-end py-[9px] pr-[10px]  items-center">
-                <div className="flex justify-end items-center h-full ">
-                    <NavLink to ="/">
-                        <div className="border rounded-xl px-[30px] py-[5px] transition-all duration-[300ms] bg-white
-                                            hover:bg-white hover:border-black  hover:text-black hover:px-[32px] ">
-                            <div className="lg:text-[18px] text-[16px] transition-all">PECHIEDEV</div>
-                        </div>
-                    </NavLink>
-                </div>
+            <div className="flex right-0 items-center justify-end fixed  w-full bg-white h-auto z-50">
+                <section className=" flex justify-end py-[9px] pr-[10px]  items-center">
+                    <div className="flex justify-end items-center h-full ">
+                        <NavLink to ="/">
+                            <div className="border rounded-xl px-[30px] py-[5px] transition-all duration-[300ms] bg-white
+                                                hover:bg-white hover:border-black  hover:text-black hover:px-[32px] ">
+                                <div className="lg:text-[18px] text-[16px] transition-all">PECHIEDEV</div>
+                            </div>
+                        </NavLink>
+                    </div>
 
 
-            </section>
-        </div>
-        <section className="fixed right-0 flex justify-end w-auto  pt-[60px] ">
-            <div className="flex justify-end ">
-                <Nav page={textToUse}/>
+                </section>
             </div>
-        </section>
+                <section className="border fixed right-0 flex justify-end w-auto  pt-[60px] ">
+    
+                        <Nav page={textToUse}/>
+
+                </section>
         </div>
         </>
         

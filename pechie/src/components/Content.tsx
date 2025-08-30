@@ -34,11 +34,11 @@ const Content = ({title="Luna Comics",github,figma,deploy, description,tags}:Con
                                 <h3 className="flex justify-start">Tools</h3>
                                 
                                 {tags && (
-                                <div className="flex justify-evenly ">
-                                    <ul className="flex items-center gap-5 flex-wrap">
+                                <div className="flex  ">
+                                    <ul className="flex items-center gap-5 flex-wrap w-full justify-evenly">
                                         {tags.map((tag) => (
-                                            <div className="px-[10px] bg-[#656565] rounded-xl text-white w-[98px] h-[22px] flex items-center justify-center" >
-                                                <li className="text-center " key={tag}>{tag}</li>
+                                            <div className="bg-[#656565] rounded-xl text-white h-[24px] flex items-center justify-center" >
+                                                <li className="text-center px-[15px]" key={tag}>{tag}</li>
                                             </div>
                                         ))}
                                     </ul>
