@@ -8,7 +8,7 @@ interface NavTopProps {
   useIndex?: number;
 }
 
-const NavTop = ({ works, activeWorkName, onSelect, useIndex = 0 }: NavTopProps) => {
+const NavTop = ({ works, onSelect, useIndex = 0 }: NavTopProps) => {
   const [activeIndex, setActiveIndex] = useState(useIndex);
 
   // keep Works.tsx in sync whenever activeIndex changes

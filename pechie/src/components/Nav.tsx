@@ -10,7 +10,7 @@ const Nav = ({page =""}: NavProps) => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    const [activeBox, setActiveBox] = useState(false)
+
     const [enteredNav, setEnteredNav] = useState(false)
 
 
@@ -21,9 +21,6 @@ const Nav = ({page =""}: NavProps) => {
 
     const [expandBox, setExpandBox] = useState(false);
 
-    const navEnter = () => {
-        setEnteredNav(true)
-    }
 
     useEffect(() => {
         setEnteredNav(false);
@@ -42,12 +39,12 @@ const Nav = ({page =""}: NavProps) => {
                     onMouseLeave={()=>setEnteredNav(false)}
                     className="flex flex-col items-center  transition-all duration-[300ms]">
                         <div className={`lg:w-[90px] lg:h-[90px] 
-                                        w-[63px] h-[63px]
+                                        w-[50px] h-[50px]
                                         bg-[var(--primary)] transition-all duration-[300ms]
                                         rounded-xl grid grid-cols-2 p-[12px] gap-[11px]
                                         ${enteredNav && 'scale-[110%] bg-black border border-[var(--primary)]'}
                                         
-                                        ${expandBox?`lg:w-[100px] lg:h-[100px] w-[73px] h-[73px]`: ``}`}>
+                                        ${expandBox?`lg:w-[100px] lg:h-[100px] w-[5px] h-[5px]`: ``}`}>
                                         
                                         <div className={`${page == "WORKS" || enteredNav? "bg-white": "bg-black"}`}></div>
                                         <div className={`${page == "INFO"|| enteredNav ? "bg-white": "bg-black"}`}></div>
@@ -56,7 +53,7 @@ const Nav = ({page =""}: NavProps) => {
 
                         </div>
 
-                        <div className={`${enteredNav && 'text-[var(--primary)]'} lg:text-[20px] text-[14px]`}> {page}</div>
+                        <div className={`${enteredNav && 'text-[var(--primary)]'} lg:text-[20px] text-[14px] bg-white rounded-xl px-[9px]`}> {page}</div>
                     </div>
             </article>
         }

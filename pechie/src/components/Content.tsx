@@ -25,7 +25,7 @@ const Content = ({title="Luna Comics",github,figma,deploy, description,tags}:Con
             </div>
             <div className="flex flex-col flex-1 items-center gap-[5px] mt-[20px] w-auto">
                 <h2 className="text-white text-regular text-center">{title ?? "Luna Comics"}</h2>
-                <Button text="DEPLOY"/>
+                <Button text="DEPLOY" link={deploy}/>
             </div>
                 <section className="flex justify-center  mt-[33px] p-[30px]">
                     <Description>
@@ -49,8 +49,8 @@ const Content = ({title="Luna Comics",github,figma,deploy, description,tags}:Con
                                 <h4>{description}</h4>
                             </article>
                             <article className="flex justify-center gap-5">
-                                <Button text="Github" type="dark"/>
-                                <Button text="Figma" type="secondary"/>
+                                <Button text="Github" type="dark" link={github}/>
+                                <Button text="Figma" type="secondary" link={figma}/>
                             </article>
                         </div>
 

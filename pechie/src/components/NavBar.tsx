@@ -13,7 +13,7 @@ type NavBarProps = {
 
 
 
-const NavBar = ({works=[], activeWorkName, onSelect}:NavBarProps) =>{
+const NavBar = ({works=[], onSelect}:NavBarProps) =>{
     const [active, setActive] = useState(works[0].name);
     const [hovering, setHovering] = useState(false);
 

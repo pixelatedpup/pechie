@@ -11,17 +11,17 @@ const Info = () =>{
                 <article className="flex flex-1 ">
                     <div className="lg:w-[489px] lg:h-[341px] w-auto h-auto bg-black rounded-xl p-[30px]">
                         <p className="text-white">
-                            Hi, I’m Peter Chiemeka (PECHIE), a Computer Science graduate specializing in Frontend Software Engineering and UX/UI Design. Over the past two years, I’ve built projects using JavaScript, 
-                            TypeScript, Python, and C++, both during and after my studies. I’m curious, dedicated, and always ready to put in the effort to get things done.
-                            In my free time, I create illustrations inspired by music and shows, some of which have led to commissioned work. I’m also passionate about building music electronics with Arduino and C++.
-                            Currently, I work as a freelance software engineer, always eager to contribute my skills to deliver the best results for your projects. If you think I’m a good fit, feel free to reach out.
+                            Hi, I’m <strong className="text-[var(--primary)]">Peter Chiemeka (PECHIE) </strong>— a Computer Science graduate with a passion for Frontend Engineering and UX/UI Design.
+                            Over the past two years, I’ve built projects with JavaScript, TypeScript, Python, and C++, both during and after my studies. I’m curious, driven, and always willing to put in the work to bring ideas to life.
+                            <br/> <br/>Outside of coding, I create illustrations inspired by music and shows (some even commissioned), and I tinker with music electronics using Arduino and C++. Currently, I’m freelancing as a software engineer and always excited to collaborate on projects where I can add value and deliver results.
+                            <br/> <br/>If I sound like a good fit, I’d love to hear from you.
                         </p>
                     </div>
                 </article>
 
-                <article className="flex flex-1 sm:justify-center md:justify-center">
-                    <div className="w-[227px] h-[341px] bg-black ">
-                        <img src={profile}/>
+                <article className="flex flex-1 justify-center">
+                    <div className="w-[227px] h-[341px] bg-black border border-[var(--primary)] border-[2px] rounded-xl ">
+                        <img className="rounded-xl" src={profile}/>
                     </div>
                 </article>
 
@@ -30,7 +30,7 @@ const Info = () =>{
 
             <section className="flex flex-col  h-auto">
                 <h2>Skills</h2>
-                <div className="flex lg:flex-row flex-col justify-evenly border border-black rounded-xl p-[20px]">
+                <div className="flex lg:flex-row flex-col justify-evenly bg-black border border-[var(--primary)] border-[2px] rounded-xl p-[20px]">
                     <Elements tag="language"/>
                     <Elements tag="other"/>
                     <Elements tag="tool"/>
