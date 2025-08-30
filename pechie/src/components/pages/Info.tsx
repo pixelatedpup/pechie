@@ -29,7 +29,7 @@ const Info = () =>{
             </section>
 
             <section className="flex flex-col  h-auto">
-                <h2>Skills</h2>
+                <h2 className="">Skills</h2>
                 <div className="flex lg:flex-row flex-col justify-evenly bg-black border border-[var(--primary)] border-[2px] rounded-xl p-[20px]">
                     <Elements tag="language"/>
                     <Elements tag="other"/>
@@ -40,34 +40,43 @@ const Info = () =>{
             <section className="flex flex-col  h-auto gap-5">
                 <h2>Experience</h2>
 
-                <article className="flex flex-col gap-5 p-[20px] border border-black rounded-xl">
+                <article className="flex flex-col gap-10 p-[20px] border border-black rounded-xl">
 
-                    <div>
+                    <div className="border-b p-[10px] border-[var(--primary)]">
                     
                     <p>
-                        <strong>Junior Front-End Developer</strong><br/>
-                        Arch Arcades | May 2025 - July 2025<br/>
+                        <strong className="text-[var(--primary)]">Junior Front-End Developer</strong><br/>
+                        <b>Arch Arcades | May 2025 - July 2025</b><br/><br/>
                     </p>
                     <ul>
-                        <li><p>Conducted UX research through user interviews and defined the overall project vision</p></li>
-                        <li><p>Produced wireframes and mockups that maintained team focus and guided project progress.</p></li>
-                        <li><p>Implemented an interactive prototype in Figma to support community-driven feedback.</p></li>
-                        <li><p>Led frontend development using React and TailwindCSS, modernizing the site’s look and feel.</p></li>
-                        <li><p>Integrated a backend server to fetch essential data from an arcade games API.</p></li>
+                        <li><p>+ Conducted UX research through user interviews and defined the overall project vision</p></li>
+                        <br/>
+                        <li><p>+ Produced wireframes and mockups that maintained team focus and guided project progress.</p></li>
+                        <br/>
+                        <li><p>+ Implemented an interactive prototype in Figma to support community-driven feedback.</p></li>
+                        <br/>
+                        <li><p>+ Led frontend development using React and TailwindCSS, modernizing the site’s look and feel.</p></li>
+                        <br/>
+                        <li><p>+ Integrated a backend server to fetch essential data from an arcade games API.</p></li>
+                        <br/>
                     </ul>
                     
                     </div>
-                    <div>
+                    <div className="p-[10px]">
                                         <p>
-                        <strong>Junior Front-End Developer</strong><br/>
-                        Arch Arcades | May 2025 - July 2025<br/>
+                        <strong className="text-[var(--primary)]">Junior Front-End Developer</strong><br/>
+                        <b>Arch Arcades | May 2025 - July 2025</b><br/><br/>
                     </p>
                     <ul>
-                        <li><p>Conducted UX research through user interviews and defined the overall project vision</p></li>
-                        <li><p>Produced wireframes and mockups that maintained team focus and guided project progress.</p></li>
-                        <li><p>Implemented an interactive prototype in Figma to support community-driven feedback.</p></li>
-                        <li><p>Led frontend development using React and TailwindCSS, modernizing the site’s look and feel.</p></li>
-                        <li><p>Integrated a backend server to fetch essential data from an arcade games API.</p></li>
+                        <li><p>+ Conducted UX research through user interviews and defined the overall project vision</p></li>
+                        <br/>
+                        <li><p>+ Produced wireframes and mockups that maintained team focus and guided project progress.</p></li>
+                        <br/>
+                        <li><p>+ Implemented an interactive prototype in Figma to support community-driven feedback.</p></li>
+                        <br/>
+                        <li><p>+ Led frontend development using React and TailwindCSS, modernizing the site’s look and feel.</p></li>
+                        <br/>
+                        <li><p>+ Integrated a backend server to fetch essential data from an arcade games API.</p></li>
                     </ul>
                     </div>
                 </article>
@@ -77,32 +86,30 @@ const Info = () =>{
                 <h2>Education/Certificates</h2>
                     <article className="flex flex-col gap-5 p-[20px] border border-black rounded-xl">
 
-                        <div>
+                        <div className="border-b p-[10px] border-[var(--primary)]">
                         
                             <p>
-                                <strong>Junior Front-End Developer</strong><br/>
-                                Arch Arcades | May 2025 - July 2025<br/>
+                                <strong className="text-[var(--primary)]">BSc (Hons) Computer Science</strong><br/>
+                                <b>University of the West of England (UWE Bristol) | Graduation: November 2024</b><br/><br/>
                             </p>
                             <ul>
-                                <li><p>Conducted UX research through user interviews and defined the overall project vision</p></li>
-                                <li><p>Produced wireframes and mockups that maintained team focus and guided project progress.</p></li>
-                                <li><p>Implemented an interactive prototype in Figma to support community-driven feedback.</p></li>
-                                <li><p>Led frontend development using React and TailwindCSS, modernizing the site’s look and feel.</p></li>
-                                <li><p>Integrated a backend server to fetch essential data from an arcade games API.</p></li>
+                                <li><p><b>Classification:</b> Upper Second Class (2:1)</p></li>
+                                <br/>
+                                <li><p><b>Relevant Modules: </b>Mobile Applications, Advanced Databases, Distributed Enterprise Systems Development.</p></li>
+                                <br/>
+
                             </ul>
                         
                         </div>
-                        <div>
+                        <div className="p-[10px]">
                             <p>
-                                <strong>Junior Front-End Developer</strong><br/>
-                                Arch Arcades | May 2025 - July 2025<br/>
+                                <strong className="text-[var(--primary)]">Meta Front-End Developer Professional Certificate</strong><br/>
+                                <b>Coursera | Certification Date: May 2025</b><br/><br/>
                             </p>
                             <ul>
-                                <li><p>Conducted UX research through user interviews and defined the overall project vision</p></li>
-                                <li><p>Produced wireframes and mockups that maintained team focus and guided project progress.</p></li>
-                                <li><p>Implemented an interactive prototype in Figma to support community-driven feedback.</p></li>
-                                <li><p>Led frontend development using React and TailwindCSS, modernizing the site’s look and feel.</p></li>
-                                <li><p>Integrated a backend server to fetch essential data from an arcade games API.</p></li>
+                                <li><p><b>Relevant Courses: </b>Version Control, HTML & CSS in depth, Advanced React, Principles of UI/UX Design.</p></li>
+                                <br/>
+
                             </ul>
                         </div>
                 </article>

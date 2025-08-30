@@ -34,7 +34,7 @@ const NavTop = ({ works, onSelect, useIndex = 0 }: NavTopProps) => {
 
             {/* Active work name */}
             <div className="flex items-center">
-                <h1>{works[activeIndex].name}</h1>
+                <h3 className="text-[24px] font-bold">{works[activeIndex].name}</h3>
             </div>
 
             {/* Next Button */}
@@ -43,9 +43,9 @@ const NavTop = ({ works, onSelect, useIndex = 0 }: NavTopProps) => {
             </div>
         </div>
 
-        <div className="flex justify-center text-[var(--primary)]">
+        <h4 className="flex justify-center text-[var(--primary)]">
             {`${activeIndex + 1}/${works.length}`}
-        </div>
+        </h4>
     </div>
   );
 };

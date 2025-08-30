@@ -5,7 +5,7 @@ const Elements = ({tag ="tools"}) =>{
 
     const filteredSkills = allSkills.filter((work) => work.type === tag);
     return(
-        <div className="flex flex-row gap-[5px]">
+        <div className="flex flex-row flex-wrap gap-[5px]">
             {filteredSkills.map((skill, index)=>(
                 <div key = {index} >
                     <Element 
