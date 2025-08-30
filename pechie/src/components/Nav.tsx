@@ -37,12 +37,12 @@ const Nav = ({page =""}: NavProps) => {
                     <div 
                     onMouseEnter={()=>setEnteredNav(true)} 
                     onMouseLeave={()=>setEnteredNav(false)}
-                    className="flex flex-col items-center  transition-all duration-[300ms]">
+                    className="flex flex-col items-center  transition-all duration-[300ms] gap-[8px]">
                         <div className={`lg:w-[90px] lg:h-[90px] 
                                         w-[50px] h-[50px]
                                         bg-[var(--primary)] transition-all duration-[300ms]
                                         rounded-xl grid grid-cols-2 p-[12px] gap-[11px]
-                                        ${enteredNav && 'scale-[110%] bg-black border border-[var(--primary)]'}
+                                        ${enteredNav && 'scale-[105%] bg-black border border-[var(--primary)]'}
                                         
                                         ${expandBox?`lg:w-[100px] lg:h-[100px] w-[5px] h-[5px]`: ``}`}>
                                         
@@ -53,7 +53,7 @@ const Nav = ({page =""}: NavProps) => {
 
                         </div>
 
-                        <div className={`${enteredNav && 'text-[var(--primary)]'} lg:text-[20px] text-[14px] bg-white rounded-xl px-[9px]`}> {page}</div>
+                        <div className={`${enteredNav && 'text-[var(--primary)]'} lg:text-[20px] text-[14px] bg-white rounded-xl px-[9px] text-[var(--primary)] border border-[var(--primary)]`}> {page}</div>
                     </div>
             </article>
         }
