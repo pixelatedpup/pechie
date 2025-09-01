@@ -65,7 +65,7 @@ const Info = () =>{
                     <div className="p-[10px]">
                                         <p>
                         <strong className="text-[var(--primary)]">Junior Front-End Developer</strong><br/>
-                        <b>Arch Arcades | May 2025 - July 2025</b><br/><br/>
+                        <b>Luna Comics | July 2025 - Present</b><br/><br/>
                     </p>
                     <ul>
                         <li><p>+ Conducted UX research through user interviews and defined the overall project vision</p></li>

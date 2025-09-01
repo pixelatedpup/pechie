@@ -35,7 +35,7 @@ const Content = ({title="Luna Comics",github,figma,deploy, description,tags}:Con
                                 
                                 {tags && (
                                 <div className="flex  ">
-                                    <ul className="flex items-center gap-5 flex-wrap w-full justify-evenly">
+                                    <ul className="flex items-center gap-5 flex-wrap w-full ">
                                         {tags.map((tag) => (
                                             <div className="bg-[#656565] rounded-xl text-white h-[24px] flex items-center justify-center" >
                                                 <li className="text-center px-[15px]" key={tag}>{tag}</li>
