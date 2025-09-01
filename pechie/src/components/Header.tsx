@@ -31,8 +31,8 @@ const Header = ({location = ""}) =>{
     return(
         <>
         <div className="pr-[20px]">
-            <div className="flex right-0 items-center justify-end fixed  w-full bg-white h-auto z-50">
-                <section className=" flex justify-end py-[9px] pr-[10px]  items-center">
+            <div className="flex left-0 lg:right-0 gitems-center justify-start lg:justify-end fixed  w-auto lg:w-full lg:bg-white  h-auto z-50">
+                <section className=" flex justify-end lg:py-[9px] lg:pr-[10px]  items-center p-[30px]">
                     <div className="flex justify-end items-center h-full ">
                         <NavLink to ="/">
                             <div className="border rounded-xl px-[30px] py-[5px] transition-all duration-[300ms] bg-white
@@ -45,7 +45,7 @@ const Header = ({location = ""}) =>{
 
                 </section>
             </div>
-                <section className="fixed right-0 flex justify-end w-auto  pt-[60px] pr-[20px]">
+                <section className="fixed right-0 flex justify-end w-auto  lg:pt-[60px] lg:pr-[20px] p-[30px]">
     
                         <Nav page={textToUse}/>
 

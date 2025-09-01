@@ -24,7 +24,7 @@ const Button = ({ text = "", type = "primary", auto = false, link }: ButtonProps
 
   const colorClassHover: Record<ButtonType, string> = {
     primary: "hover:bg-white hover:text-black hover:border hover:border-black",
-    secondary: "hover:bg-black hover:text-white",
+    secondary: "hover:bg-black hover:text-white border hover:border-white",
     dark: "hover:bg-white hover:text-black hover:border hover:border-black",
   };
 

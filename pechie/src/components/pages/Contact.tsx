@@ -8,12 +8,12 @@ const Contact = () =>{
             <div className="flex flex-col gap-5 bg-black h-[417px] rounded-xl pt-[50px]">
                 <h2 className="flex justify-center text-white text-center">Let's Get in Touch</h2>
                 <div className="flex justify-center gap-10">
-                    <div className="group h-[114px] w-[114px]">
+                    <div className="group lg:h-[114px] lg:w-[114px] h-[75px] w-[75px]">
                         <a href="https://www.linkedin.com/in/pechiedev/">
                         <img className="group-hover:invert group-hover:scale-[109%] transition-all duration-[300ms]" src={Linkedin}/>
                         </a>
                     </div>
-                    <div className="group h-[114px] w-[114px]">
+                    <div className="group lg:h-[114px] lg:w-[114px] h-[75px] w-[75px]">
                         <a href="https://github.com/pixelatedpup">
                         <img className="group-hover:invert group-hover:scale-[109%] transition-all duration-[300ms] " src={Git}/>
                         </a>

@@ -42,7 +42,7 @@ const Info = () =>{
 
                 <article className="flex flex-col gap-10 p-[20px] border border-black rounded-xl">
 
-                    <div className="border-b p-[10px] border-[var(--primary)]">
+                    <div className="border-b p-[10px] border-[var(--dark)]">
                     
                     <p>
                         <strong className="text-[var(--primary)]">Junior Front-End Developer</strong><br/>
@@ -86,7 +86,7 @@ const Info = () =>{
                 <h2>Education/Certificates</h2>
                     <article className="flex flex-col gap-5 p-[20px] border border-black rounded-xl">
 
-                        <div className="border-b p-[10px] border-[var(--primary)]">
+                        <div className="border-b p-[10px] border-[var(--dark)]">
                         
                             <p>
                                 <strong className="text-[var(--primary)]">BSc (Hons) Computer Science</strong><br/>
