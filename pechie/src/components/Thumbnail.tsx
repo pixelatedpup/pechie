@@ -8,7 +8,6 @@ interface ThumbnailProps {
 const Thumbnail = ({
   custom = "",
   src,
-  alt = "thumbnail",
   autoPlay = false,
 }: ThumbnailProps) => {
   return (
