@@ -37,6 +37,7 @@ const Works = () => {
                 deploy={activeWork.deploy}
                 tags={activeWork.tags}
                 description={activeWork.description}
+                videos = {activeWork.videos}
             />
         </div>
     );

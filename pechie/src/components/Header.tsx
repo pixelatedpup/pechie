@@ -30,14 +30,14 @@ const Header = ({location = ""}) =>{
     }   
     return(
         <>
-        <div className="pr-[20px]">
-            <div className="flex left-0 lg:right-0 gitems-center justify-start lg:justify-end fixed  w-auto lg:w-full lg:bg-white  h-auto z-50">
-                <section className=" flex justify-end lg:py-[9px] lg:pr-[10px]  items-center p-[30px]">
+        <div className="flex fixed bg-white r z-50 w-full">
+            <div className="flex left-0 lg:right-0 gitems-center justify-start lg:justify-end lg:fixed  w-auto lg:w-full lg:bg-white  h-auto z-50">
+                <section className=" flex justify-end lg:py-[9px] lg:pr-[10px]  items-center p-[15px]">
                     <div className="flex justify-end items-center h-full ">
                         <NavLink to ="/">
                             <div className="border rounded-xl px-[30px] py-[5px] transition-all duration-[300ms] bg-white
                                                 hover:bg-white hover:border-black  hover:text-black hover:px-[32px] ">
-                                <div className="lg:text-[18px] text-[16px] transition-all">PECHIEDEV</div>
+                                <div className="lg:text-[18px] text-[13px] transition-all">PECHIEDEV</div>
                             </div>
                         </NavLink>
                     </div>
@@ -45,11 +45,13 @@ const Header = ({location = ""}) =>{
 
                 </section>
             </div>
-                <section className="fixed right-0 flex justify-end w-auto  lg:pt-[60px] lg:pr-[20px] p-[30px]">
+            <div className="w-full">
+                <section className="lg:fixed right-0 flex justify-end lg:w-auto lg:pt-[60px] lg:pr-[20px] p-[15px]">
     
                         <Nav page={textToUse}/>
 
                 </section>
+            </div>
         </div>
         </>
         

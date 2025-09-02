@@ -37,7 +37,7 @@ const Nav = ({page =""}: NavProps) => {
                     <div 
                     onMouseEnter={()=>setEnteredNav(true)} 
                     onMouseLeave={()=>setEnteredNav(false)}
-                    className="flex flex-col items-center  transition-all duration-[300ms] gap-[8px]">
+                    className="flex lg:flex-col flex-row-reverse items-center  transition-all duration-[300ms] gap-[8px]">
                         <div className={`lg:w-[90px] lg:h-[90px] 
                                         w-[50px] h-[50px]
                                         bg-[var(--primary)] transition-all duration-[300ms]

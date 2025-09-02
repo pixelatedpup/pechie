@@ -1,3 +1,24 @@
+//Luna
+import demoLuna from "./workVideos/demo-luna.mp4"
+import lofiLuna from "./workVideos/lofi-luna.mp4"
+import mockupLuna from "./workVideos/wireframe-luna.mp4"
+
+//Arch
+import demoArch from "./workVideos/demo-arch.mp4"
+import lofiArch from "./workVideos/wireframe-arch.mp4"
+import mockupArch from "./workVideos/mockup-arch.mp4"
+
+//Arch
+
+import lofiOgius from "./workVideos/lofi-ogius.mp4"
+import mockupOgius from "./workVideos/mockup-ogius.mp4"
+
+//Arch
+
+import lofiSun from "./workVideos/mockup-sunset.mp4"
+import mockupSun from "./workVideos/lofi-sunset.mp4"
+
+
 
 export const works = [
     {   id:1, 
@@ -7,7 +28,7 @@ export const works = [
         description:"A website to help independent comic authors post their comics, update their fans and sell their merchandise.",
         github:"https://github.com/pixelatedpup/lunacomics",
         figma:"",
-        images:[{cover:"", first:"", second:"", third:""}]
+        videos:[demoLuna,mockupLuna,lofiLuna,""]
     
     },
 
@@ -18,7 +39,7 @@ export const works = [
         description:"A website for a local arcade that displays each game using a library API, aswell as the current highscore of each member. Currently in production ,but core features have been implemented..",
         github:"https://github.com/pixelatedpup/archarcades",
         figma:"https://www.figma.com/design/BnrdiFaGesFvgOKNbqN135/Arch-Arcades?node-id=2-148&t=h6mjttNQwib45vOQ-1",
-        images:[{cover:"", first:"", second:"", third:""}]
+        videos:[demoArch,mockupArch,lofiArch, " "]
     
     },
 
@@ -30,7 +51,7 @@ export const works = [
         description:"A portfolio website to display my illustrations, commision services and shop items. A prototype has been made in figma, but actual coding has not began implementation.",
         github:"https://github.com/pixelatedpup/ogius",
         figma:"https://www.figma.com/design/ZLceXblPLH4lB0ytC5TLrd/OGIUS?t=h6mjttNQwib45vOQ-1",
-        images:[{cover:"", first:"", second:"", third:""}]
+        videos:[mockupOgius,lofiOgius, " ", " "]
     
     },
 
@@ -42,7 +63,7 @@ export const works = [
         description:"A mobile application that allows movie enthusiasts to order snacks and accumulate credits to help with discounted prices.",
         github:"",
         figma:"https://www.figma.com/design/WOFTb63byDA1zXHgfyuEkS/Sunset-Cinemas?node-id=46-194&t=h6mjttNQwib45vOQ-1",
-        images:[{cover:"", first:"", second:"", third:""}]
+        videos:[mockupSun,lofiSun, " ", " "]
     
     },
 
@@ -54,7 +75,7 @@ export const works = [
         description:"My old portfolio website to diplay past programming projects.",
         github:"https://github.com/pixelatedpup/pechiedev",
         figma:"",
-        images:[{cover:"", first:"", second:"", third:""}]
+        videos:[" "," "," "," "]
     
     }
 ]

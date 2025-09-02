@@ -1,6 +1,7 @@
 import Button from "./Button";
 import Description from "./Description";
 import Thumbnail from "./Thumbnail";
+import { useState } from "react";
 
 interface ContentProps{
     title?:string;
@@ -8,19 +9,26 @@ interface ContentProps{
     figma?:string;
     deploy?:string;
     tags?:string[];
+    videos:string[];
     description?: string;
 }
 
 
-const Content = ({title="Luna Comics",github,figma,deploy, description,tags}:ContentProps) =>{
+const Content = ({title="Luna Comics",github,figma,deploy, description,tags,videos}:ContentProps) =>{
+    
+    const[currentVideo, setCurrentVideo] = useState(0);
     return(
         <div className="flex flex-col w-auto lg:w-[742px] h-auto bg-black rounded-xl py-[50px]">
             <div className="flex lg:flex-row flex-col items-center lg:justify-center w-[600px] h-[286.5px] gap-[20px] w-auto h-auto">
-                <Thumbnail/>
+                <Thumbnail src={videos[currentVideo]} autoPlay={true}/>
                 <div className="flex lg:flex-col flex-row lg:h-[282px] lg:justify-evenly h-auto " >
-                    <Thumbnail custom="lg:w-[108px] lg:h-[77px] w-[77.142px] h-[55px]"/>
-                    <Thumbnail custom="lg:w-[108px] lg:h-[77px] w-[77.142px] h-[55px]"/>
-                    <Thumbnail custom="lg:w-[108px] lg:h-[77px] w-[77.142px] h-[55px]"/>
+                    {videos.map((video,index)=>(
+                        <div onClick={() => setCurrentVideo(index)} className={`  hover:border hover:border-[var(--primary)] ${currentVideo == index && 'scale-[109%] border border-[3px] border-[var(--primary)]'}`}>
+                            <Thumbnail src={video} custom="lg:w-[108px] lg:h-[77px] w-[77.142px] h-[55px]"/>
+                        </div>
+                    ))}
+
+                    {/* <Thumbnail src={images[3]} custom="lg:w-[108px] lg:h-[77px] w-[77.142px] h-[55px]"/> */}
                 </div>
             </div>
             <div className="flex flex-col flex-1 items-center gap-[5px] mt-[20px] w-auto">
