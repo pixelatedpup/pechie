@@ -11,10 +11,11 @@ interface ContentProps{
     tags?:string[];
     videos:string[];
     description?: string;
+    small?:boolean;
 }
 
 
-const Content = ({title="Luna Comics",github,figma,deploy, description,tags,videos}:ContentProps) =>{
+const Content = ({title="Luna Comics",github,figma,deploy, description,tags,videos,small=false}:ContentProps) =>{
     
     const[currentVideo, setCurrentVideo] = useState(0);
     return(
@@ -32,7 +33,8 @@ const Content = ({title="Luna Comics",github,figma,deploy, description,tags,vide
                 </div>
             </div>
             <div className="flex flex-col flex-1 items-center gap-[5px] mt-[20px] w-auto">
-                <h2 className="text-white text-regular text-center">{title ?? "Luna Comics"}</h2>
+                {!small &&
+                <h2 className="text-white text-regular text-center">{title ?? "Luna Comics"}</h2>}
                 <Button text="DEPLOY" link={deploy}/>
             </div>
                 <section className="flex justify-center  mt-[8px] p-[20px]">
@@ -43,10 +45,10 @@ const Content = ({title="Luna Comics",github,figma,deploy, description,tags,vide
                                 
                                 {tags && (
                                 <div className="flex  ">
-                                    <ul className="flex items-center gap-5 flex-wrap w-full ">
+                                    <ul className="flex items-center lg:gap-5 gap-[6px] flex-wrap w-full ">
                                         {tags.map((tag) => (
                                             <div className="bg-[#656565] rounded-xl text-white h-[24px] flex items-center justify-center" >
-                                                <li className="text-center px-[15px]" key={tag}>{tag}</li>
+                                                <li className="text-center px-[15px]" key={tag}><div className="text-[13px] lg:text-[14px]">{tag}</div></li>
                                             </div>
                                         ))}
                                     </ul>

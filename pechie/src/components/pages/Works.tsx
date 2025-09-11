@@ -38,6 +38,7 @@ const Works = () => {
                 tags={activeWork.tags}
                 description={activeWork.description}
                 videos = {activeWork.videos}
+                small = {isMobileOrTablet}
             />
         </div>
     );
