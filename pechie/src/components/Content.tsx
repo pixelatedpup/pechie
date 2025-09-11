@@ -22,14 +22,16 @@ const Content = ({title="Luna Comics",github,figma,deploy, description,tags,vide
         <div className="flex flex-col w-auto lg:w-[742px] h-auto bg-black rounded-xl py-[50px]">
             <div className="flex lg:flex-row flex-col items-center lg:justify-center w-[600px] h-[286.5px] gap-[20px] w-auto h-auto">
                 <Thumbnail src={videos[currentVideo]} autoPlay={true}/>
-                <div className="flex lg:flex-col flex-row lg:h-[282px] lg:justify-evenly h-auto " >
-                    {videos.map((video,index)=>(
-                        <div onClick={() => setCurrentVideo(index)} className={`  hover:border hover:border-[var(--primary)] ${currentVideo == index && 'scale-[109%] border border-[3px] border-[var(--primary)]'}`}>
-                            <Thumbnail src={video} custom="lg:w-[108px] lg:h-[77px] w-[77.142px] h-[55px]"/>
-                        </div>
-                    ))}
+                <div className="sm:w-[283.85px] md:w-[283.85px] lg:w-auto ">
+                    <div className="flex lg:flex-col flex-row lg:h-[282px] justify-evenly h-auto" >
+                        {videos.map((video,index)=>(
+                            <div onClick={() => setCurrentVideo(index)} className={`  hover:border hover:border-[var(--primary)] ${currentVideo == index && 'scale-[109%] border border-[3px] border-[var(--primary)]'}`}>
+                                <Thumbnail src={video} custom="lg:w-[108px] lg:h-[77px] w-[60px] h-[42.78px]"/>
+                            </div>
+                        ))}
 
-                    {/* <Thumbnail src={images[3]} custom="lg:w-[108px] lg:h-[77px] w-[77.142px] h-[55px]"/> */}
+                        {/* <Thumbnail src={images[3]} custom="lg:w-[108px] lg:h-[77px] w-[77.142px] h-[55px]"/> */}
+                    </div>
                 </div>
             </div>
             <div className="flex flex-col flex-1 items-center gap-[5px] mt-[20px] w-auto">
@@ -48,7 +50,7 @@ const Content = ({title="Luna Comics",github,figma,deploy, description,tags,vide
                                     <ul className="flex items-center lg:gap-5 gap-[6px] flex-wrap w-full ">
                                         {tags.map((tag) => (
                                             <div className="bg-[#656565] rounded-xl text-white h-[24px] flex items-center justify-center" >
-                                                <li className="text-center px-[15px]" key={tag}><div className="text-[13px] lg:text-[14px]">{tag}</div></li>
+                                                <li className="text-center px-[8px]" key={tag}><div className="text-[13px] lg:text-[14px]">{tag}</div></li>
                                             </div>
                                         ))}
                                     </ul>
