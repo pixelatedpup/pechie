@@ -15,7 +15,7 @@ const Works = () => {
     };
 
     return (
-        <div className={`flex ${isMobileOrTablet ? "flex-col" : "flex-row"} justify-center w-full gap-5`}>
+        <div className={`flex ${isMobileOrTablet ? "flex-col mt-[80px]" : "flex-row"} justify-center w-full gap-5`}>
             {isMobileOrTablet ? (
                 <NavTop
                     works={works}

@@ -35,7 +35,7 @@ const Content = ({title="Luna Comics",github,figma,deploy, description,tags,vide
                 <h2 className="text-white text-regular text-center">{title ?? "Luna Comics"}</h2>
                 <Button text="DEPLOY" link={deploy}/>
             </div>
-                <section className="flex justify-center  mt-[33px] p-[30px]">
+                <section className="flex justify-center  mt-[8px] p-[20px]">
                     <Description>
                         <div className="flex flex-col gap-5 py-[20px] px-[20px]">
                             <article className="flex flex-col gap-5">
