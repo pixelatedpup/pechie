@@ -42,18 +42,19 @@ const Nav = ({page =""}: NavProps) => {
                                         w-[50px] h-[50px]
                                         bg-[var(--primary)] transition-all duration-[300ms]
                                         rounded-xl grid grid-cols-2 p-[12px] gap-[11px]
+                                        border
                                         ${enteredNav && 'scale-[105%] bg-black border border-[var(--primary)]'}
                                         
                                         ${expandBox?`lg:w-[100px] lg:h-[100px] w-[5px] h-[5px]`: ``}`}>
                                         
-                                        <div className={`${page == "WORKS" || enteredNav? "bg-white": "bg-black"}`}></div>
-                                        <div className={`${page == "INFO"|| enteredNav ? "bg-white": "bg-black"}`}></div>
-                                        <div className={`${page == "GITHUB" || enteredNav ? "bg-white": "bg-black"}`}></div>
-                                        <div className={`${page == "CONTACT" || enteredNav ? "bg-white": "bg-black"}`}></div>
+                                        <div className={`${page == "WORKS" || enteredNav? "bg-white": "bg-black"} border`}></div>
+                                        <div className={`${page == "INFO"|| enteredNav ? "bg-white": "bg-black"} border`}></div>
+                                        <div className={`${page == "GITHUB" || enteredNav ? "bg-white": "bg-black"} border`}></div>
+                                        <div className={`${page == "CONTACT" || enteredNav ? "bg-white": "bg-black"} border`}></div>
 
                         </div>
 
-                        <div className={`${enteredNav && 'text-[var(--primary)]'} lg:text-[20px] text-[14px] bg-white rounded-xl px-[9px] text-[var(--primary)] border border-[var(--primary)]`}> {page}</div>
+                        <div className={`${enteredNav && 'text-[var(--primary)]'} lg:text-[20px] text-[14px] bg-white rounded-xl px-[9px] text-[var(--primary)] `}> {page}</div>
                     </div>
             </article>
         }
