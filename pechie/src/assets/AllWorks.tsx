@@ -37,7 +37,7 @@ export const works = [
         deploy:"https://archredux.vercel.app", 
         tags:["JavaScript", "React", "HTML/CSS", "TailWindCSS"], 
         description:"A website for a local arcade that displays each game using a library API, aswell as the current highscore of each member. Currently in production ,but core features have been implemented..",
-        github:"https://github.com/pixelatedpup/archarcades",
+        github:"https://github.com/pixelatedpup/archredux",
         figma:"https://www.figma.com/design/BnrdiFaGesFvgOKNbqN135/Arch-Arcades?node-id=2-148&t=h6mjttNQwib45vOQ-1",
         videos:[demoArch,mockupArch,lofiArch]
     
