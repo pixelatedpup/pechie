@@ -4,7 +4,7 @@ import lofiLuna from "./workVideos/lofi-luna.mp4"
 import mockupLuna from "./workVideos/wireframe-luna.mp4"
 
 //Arch
-import demoArch from "./workVideos/demo-arch.mp4"
+import demoArch from "https://res.cloudinary.com/dhlboslsy/video/upload/v1760477881/Screen_Recording_2025-10-14_at_22.35.45_onriir.mov"
 import lofiArch from "./workVideos/wireframe-arch.mp4"
 import mockupArch from "./workVideos/mockup-arch.mp4"
 
@@ -34,7 +34,7 @@ export const works = [
 
     {   id:2, 
         name:"Arch Arcades", 
-        deploy:"https://pixelatedpup.github.io/archarcades", 
+        deploy:"https://archredux.vercel.app", 
         tags:["JavaScript", "React", "HTML/CSS", "TailWindCSS"], 
         description:"A website for a local arcade that displays each game using a library API, aswell as the current highscore of each member. Currently in production ,but core features have been implemented..",
         github:"https://github.com/pixelatedpup/archarcades",
