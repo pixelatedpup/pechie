@@ -66,17 +66,5 @@ export const works = [
         videos:[mockupSun,lofiSun, " "]
     
     },
-
-        {   
-        id:5, 
-        name:"PECHIEDEV(OLD)", 
-        deploy:"https://github.com/pixelatedpup/pechiedev", 
-        tags:["JavaScript", "React", "HTML/CSS"], 
-        description:"My old portfolio website to diplay past programming projects.",
-        github:"https://github.com/pixelatedpup/pechiedev",
-        figma:"",
-        videos:[" "," "," "]
-    
-    }
 ]
 
