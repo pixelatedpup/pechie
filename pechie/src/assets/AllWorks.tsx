@@ -4,7 +4,6 @@ import lofiLuna from "./workVideos/lofi-luna.mp4"
 import mockupLuna from "./workVideos/wireframe-luna.mp4"
 
 //Arch
-import demoArch from "https://res.cloudinary.com/dhlboslsy/video/upload/v1760477881/Screen_Recording_2025-10-14_at_22.35.45_onriir.mov"
 import lofiArch from "./workVideos/wireframe-arch.mp4"
 import mockupArch from "./workVideos/mockup-arch.mp4"
 
@@ -18,6 +17,8 @@ import mockupOgius from "./workVideos/mockup-ogius.mp4"
 import lofiSun from "./workVideos/mockup-sunset.mp4"
 import mockupSun from "./workVideos/lofi-sunset.mp4"
 
+
+const demoArch = "https://res.cloudinary.com/dhlboslsy/video/upload/v1760485751/New_arc_v0obbq.mp4";
 
 
 export const works = [
