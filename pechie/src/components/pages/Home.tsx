@@ -9,56 +9,67 @@ const Home = () =>{
         <>
 
         <div className="flex justify-center items-center pt-[105px]">
-        <section className=" grid grid-cols-2 w-[302px] h-[400px]  gap-y-10 gap-x-5">
-            <article>
-                <div >
-                    <NavLink to="/works">
+        <section className="  w-[302px] h-[400px]  ">
+            <ul className=" grid grid-cols-2 gap-y-10 gap-x-5">
+
+            <li>          
+                <article>
+                    <div >
+                        <NavLink to="/works">
+                            <div className="group flex justify-center items-center border border-black w-[140px] h-[140px] rounded-xl
+                                            hover:scale-[108%] hover:bg-black hover:text-white transition-all duration-[300ms]">
+                                            <img  className="group-hover:invert transition-all duration-[300ms]" src={works} />             
+                            </div>
+                                                            
+                        </NavLink>
+                        <h2 className="text-center">WORKS</h2>
+                    </div>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <div>
+                        <NavLink to="/info">
+                            <div className="group flex justify-center items-center border border-black w-[140px] h-[140px] rounded-xl
+                                            hover:scale-[108%] hover:bg-black hover:text-white transition-all duration-[300ms]">
+                                        <img className="group-hover:invert transition-all duration-[300ms]" src={info} />             
+                            </div>   
+                        </NavLink>
+                        <h2 className="text-center">INFO</h2>
+                    </div>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <div>
+                        <a href="https://github.com/pixelatedpup">
                         <div className="group flex justify-center items-center border border-black w-[140px] h-[140px] rounded-xl
                                         hover:scale-[108%] hover:bg-black hover:text-white transition-all duration-[300ms]">
-                                        <img  className="group-hover:invert transition-all duration-[300ms]" src={works} />             
+
+                                        <img className="group-hover:invert transition-all duration-[300ms]" src={github} />    
                         </div>
-                                                         
-                    </NavLink>
-                    <h2 className="text-center">Works</h2>
-                </div>
-            </article>
+                        </a>
+                        <h2 className="text-center">GITHUB</h2>
+                    </div>
+                </article>
+            </li>
 
-            <article>
-                <div>
-                    <NavLink to="/info">
+            <li>
+                <article>
+                    <div>
+                        <NavLink to="/contact">
                         <div className="group flex justify-center items-center border border-black w-[140px] h-[140px] rounded-xl
                                         hover:scale-[108%] hover:bg-black hover:text-white transition-all duration-[300ms]">
-                                    <img className="group-hover:invert transition-all duration-[300ms]" src={info} />             
-                        </div>   
-                    </NavLink>
-                    <h2 className="text-center">Info</h2>
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <a href="https://github.com/pixelatedpup">
-                    <div className="group flex justify-center items-center border border-black w-[140px] h-[140px] rounded-xl
-                                    hover:scale-[108%] hover:bg-black hover:text-white transition-all duration-[300ms]">
-
-                                    <img className="group-hover:invert transition-all duration-[300ms]" src={github} />    
+                                    <img className="group-hover:invert transition-all duration-[300ms]" src={contact} />             
+                        </div>
+                        </NavLink>
+                        <h2 className="text-center">CONTACT</h2>
                     </div>
-                    </a>
-                    <h2 className="text-center">GitHub</h2>
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <NavLink to="/contact">
-                    <div className="group flex justify-center items-center border border-black w-[140px] h-[140px] rounded-xl
-                                    hover:scale-[108%] hover:bg-black hover:text-white transition-all duration-[300ms]">
-                                <img className="group-hover:invert transition-all duration-[300ms]" src={contact} />             
-                    </div>
-                    </NavLink>
-                    <h2 className="text-center">Contact</h2>
-                </div>
-            </article>
+                </article>
+            </li>
+            </ul>
         </section>
         </div>
         </>

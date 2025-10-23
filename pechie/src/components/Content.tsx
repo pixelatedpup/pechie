@@ -49,8 +49,8 @@ const Content = ({title="Luna Comics",github,figma,deploy, description,tags,vide
                                 <div className="flex  ">
                                     <ul className="flex items-center lg:gap-5 gap-[6px] flex-wrap w-full ">
                                         {tags.map((tag) => (
-                                            <div className="bg-[#656565] rounded-xl text-white h-[24px] flex items-center justify-center" >
-                                                <li className="text-center px-[8px]" key={tag}><div className="text-[13px] lg:text-[14px]">{tag}</div></li>
+                                            <div className="bg-[var(--greyC)] rounded-xl text-white h-[24px] flex items-center justify-center" >
+                                                <li className="text-center px-[12px] " key={tag}><div className="text-[13px] lg:text-[14px]">{tag}</div></li>
                                             </div>
                                         ))}
                                     </ul>

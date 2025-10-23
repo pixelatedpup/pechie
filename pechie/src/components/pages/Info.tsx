@@ -5,7 +5,7 @@ const Info = () =>{
     return(
         <>
 
-        <div className="flex flex-col gap-15">
+        <div className="flex flex-col gap-15 px-[150px] py-[50px]">
             <section className="flex lg:flex-row lg:gap-0 gap-10 flex-col-reverse  justify-center ">
 
                 <article className="flex flex-1 ">
@@ -30,7 +30,7 @@ const Info = () =>{
 
             <section className="flex flex-col  h-auto">
                 <h2 className="">Skills</h2>
-                <div className="flex lg:flex-row flex-col justify-evenly bg-black border border-[var(--primary)] border-[2px] rounded-xl p-[20px]">
+                <div className="flex lg:flex-row flex-col justify-evenly bg-[var(--light)] border border-black border-[1px] rounded-xl p-[20px]">
                     <Elements tag="language"/>
                     <Elements tag="other"/>
                     <Elements tag="tool"/>
@@ -50,15 +50,10 @@ const Info = () =>{
                     </p>
                     <ul>
                         <li><p>+ Conducted UX research through user interviews and defined the overall project vision</p></li>
-                        <br/>
                         <li><p>+ Produced wireframes and mockups that maintained team focus and guided project progress.</p></li>
-                        <br/>
                         <li><p>+ Implemented an interactive prototype in Figma to support community-driven feedback.</p></li>
-                        <br/>
                         <li><p>+ Led frontend development using React and TailwindCSS, modernizing the site’s look and feel.</p></li>
-                        <br/>
                         <li><p>+ Integrated a backend server to fetch essential data from an arcade games API.</p></li>
-                        <br/>
                     </ul>
                     
                     </div>
@@ -69,13 +64,9 @@ const Info = () =>{
                     </p>
                     <ul>
                         <li><p>+ Conducted UX research through user interviews and defined the overall project vision</p></li>
-                        <br/>
                         <li><p>+ Produced wireframes and mockups that maintained team focus and guided project progress.</p></li>
-                        <br/>
                         <li><p>+ Implemented an interactive prototype in Figma to support community-driven feedback.</p></li>
-                        <br/>
                         <li><p>+ Led frontend development using React and TailwindCSS, modernizing the site’s look and feel.</p></li>
-                        <br/>
                         <li><p>+ Integrated a backend server to fetch essential data from an arcade games API.</p></li>
                     </ul>
                     </div>
@@ -94,9 +85,7 @@ const Info = () =>{
                             </p>
                             <ul>
                                 <li><p><b>Classification:</b> Upper Second Class (2:1)</p></li>
-                                <br/>
                                 <li><p><b>Relevant Modules: </b>Mobile Applications, Advanced Databases, Distributed Enterprise Systems Development.</p></li>
-                                <br/>
 
                             </ul>
                         
@@ -108,8 +97,6 @@ const Info = () =>{
                             </p>
                             <ul>
                                 <li><p><b>Relevant Courses: </b>Version Control, HTML & CSS in depth, Advanced React, Principles of UI/UX Design.</p></li>
-                                <br/>
-
                             </ul>
                         </div>
                 </article>

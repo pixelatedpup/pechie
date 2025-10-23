@@ -35,9 +35,9 @@ const Header = ({location = ""}) =>{
                 <section className=" flex justify-end lg:py-[9px] lg:pr-[10px]  items-center p-[15px]">
                     <div className="flex justify-end items-center h-full ">
                         <NavLink to ="/">
-                            <div className="border rounded-xl px-[30px] py-[5px] transition-all duration-[300ms] bg-white
-                                                hover:bg-white hover:border-black  hover:text-black hover:px-[32px] ">
-                                <div className="lg:text-[18px] text-[13px] transition-all">PECHIEDEV</div>
+                            <div className="border rounded-xl px-[30px] py-[5px] transition-all duration-[300ms] bg-black
+                                                hover:bg-white hover:border-black  hover:text-black hover:px-[32px] text-white">
+                                <h3 className="lg:text-[18px] text-[13px] transition-all ">PECHIEDEV</h3>
                             </div>
                         </NavLink>
                     </div>
