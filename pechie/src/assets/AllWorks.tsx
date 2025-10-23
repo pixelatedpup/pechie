@@ -47,7 +47,7 @@ export const works = [
         {   
         id:3, 
         name:"OGIUS", 
-        deploy:"https://github.com/pixelatedpup/ogius", 
+        deploy:"https://ogius.net", 
         tags:["TypeScript", "React", "HTML", "TailWindCSS", "MongoDB"], 
         description:"A portfolio website to display my illustrations, commision services and shop items. A prototype has been made in figma, but actual coding has not began implementation.",
         github:"https://github.com/pixelatedpup/ogius",
