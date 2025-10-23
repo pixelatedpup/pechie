@@ -7,12 +7,12 @@ interface ElementProps{
 const Element = ({text="", image}:ElementProps) =>{
     return(
         <>
-            <div className="flex flex-col items-center h-auto">
+            <div className="flex flex-col gap-2 items-center h-auto">
                 <img 
                 src={image}
                 alt={text}
                 className="w-[48px] h-[48px]"></img>
-                <h5 className="text-[var(--primary)]">{text}</h5>
+                <h5 className="text-black">{text}</h5>
             </div>
         </>
     )

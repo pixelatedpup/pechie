@@ -30,7 +30,7 @@ const Nav = ({page =""}: NavProps) => {
         
         <>
         {page != "HOME" && 
-            <article className="w-[207px w-full cursor-pointer" 
+            <article className=" w-full cursor-pointer" 
             onMouseEnter={()=> setExpandBox(true)}  
             onMouseLeave={()=> setExpandBox(false)} 
             onClick={goHome}>
@@ -38,14 +38,14 @@ const Nav = ({page =""}: NavProps) => {
                     onMouseEnter={()=>setEnteredNav(true)} 
                     onMouseLeave={()=>setEnteredNav(false)}
                     className="flex lg:flex-col flex-row-reverse items-center  transition-all duration-[300ms] gap-[8px]">
-                        <div className={`lg:w-[90px] lg:h-[90px] 
+                        <div className={`lg:w-[60px] lg:h-[60px] 
                                         w-[50px] h-[50px]
                                         bg-[var(--primary)] transition-all duration-[300ms]
                                         rounded-xl grid grid-cols-2 p-[12px] gap-[11px]
                                         border
                                         ${enteredNav && 'scale-[105%] bg-white border border-black'}
                                         
-                                        ${expandBox?`lg:w-[100px] lg:h-[100px] w-[5px] h-[5px]`: ``}`}>
+                                        ${expandBox?`lg:w-[70px] lg:h-[70px] w-[55px] h-[55px]`: ``}`}>
                                         
                                         <div className={`${page == "WORKS" || enteredNav? "bg-black": "bg-white"} border`}></div>
                                         <div className={`${page == "INFO"|| enteredNav ? "bg-black": "bg-white"} border`}></div>

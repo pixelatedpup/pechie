@@ -24,7 +24,7 @@ const demoArch = "https://res.cloudinary.com/dhlboslsy/video/upload/v1760485751/
 export const works = [
     {   id:1, 
         name:"Luna", 
-        deploy:"https://github.com/pixelatedpup/lunacomics", 
+        deploy:"https://lunacomics-client.vercel.app", 
         tags:["TypeScript", "React", "HTML/CSS", "TailWindCSS", "ExpressJS"], 
         description:"A website to help independent comic authors post their comics, update their fans and sell their merchandise.",
         github:"https://github.com/pixelatedpup/lunacomics",
