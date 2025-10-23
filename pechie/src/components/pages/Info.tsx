@@ -5,7 +5,7 @@ const Info = () =>{
     return(
         <>
 
-        <div className="flex flex-col gap-15 px-[150px] py-[50px]">
+        <div className="flex flex-col gap-15 lg:px-[150px] lg:py-[50px] py-[50px]">
             <section className="flex lg:flex-row lg:gap-0 gap-10 flex-col-reverse  justify-center ">
 
                 <article className="flex flex-1 ">
