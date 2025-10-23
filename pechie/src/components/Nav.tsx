@@ -42,15 +42,15 @@ const Nav = ({page =""}: NavProps) => {
                                         w-[50px] h-[50px]
                                         bg-[var(--primary)] transition-all duration-[300ms]
                                         rounded-xl grid grid-cols-2 p-[12px] gap-[11px]
-                                        border
+                                        
                                         ${enteredNav && 'scale-[105%] bg-white border border-black'}
                                         
                                         ${expandBox?`lg:w-[70px] lg:h-[70px] w-[55px] h-[55px]`: ``}`}>
                                         
-                                        <div className={`${page == "WORKS" || enteredNav? "bg-black": "bg-white"} border`}></div>
-                                        <div className={`${page == "INFO"|| enteredNav ? "bg-black": "bg-white"} border`}></div>
-                                        <div className={`${page == "GITHUB" || enteredNav ? "bg-black": "bg-white"} border`}></div>
-                                        <div className={`${page == "CONTACT" || enteredNav ? "bg-black": "bg-white"} border`}></div>
+                                        <div className={`${page == "WORKS" || enteredNav? "bg-black": "bg-white"} `}></div>
+                                        <div className={`${page == "INFO"|| enteredNav ? "bg-black": "bg-white"} `}></div>
+                                        <div className={`${page == "GITHUB" || enteredNav ? "bg-black": "bg-white"} `}></div>
+                                        <div className={`${page == "CONTACT" || enteredNav ? "bg-black": "bg-white"} `}></div>
 
                         </div>
 
