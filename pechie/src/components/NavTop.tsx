@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import arrow from "../assets/arrow.png";
+import arrow from "../assets/arrow.svg";
 
 interface NavTopProps {
   works: { name: string }[];
