@@ -14,8 +14,8 @@ import mockupOgius from "./workVideos/mockup-ogius.mp4"
 
 //Arch
 
-import lofiSun from "./workVideos/mockup-sunset.mp4"
-import mockupSun from "./workVideos/lofi-sunset.mp4"
+// import lofiSun from "./workVideos/mockup-sunset.mp4"
+// import mockupSun from "./workVideos/lofi-sunset.mp4"
 
 
 const demoArch = "https://res.cloudinary.com/dhlboslsy/video/upload/v1760485751/New_arc_v0obbq.mp4";
