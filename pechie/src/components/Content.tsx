@@ -19,7 +19,7 @@ const Content = ({title="Luna Comics",github,figma,deploy, description,tags,vide
     
     const[currentVideo, setCurrentVideo] = useState(0);
     return(
-        <div className="flex flex-col w-auto lg:w-[742px] h-auto bg-black rounded-xl py-[50px]">
+        <div className="flex flex-col w-auto lg:w-[742px] h-auto bg-[var(--darker)]  border rounded-xl py-[50px]">
             <div className="flex lg:flex-row flex-col items-center lg:justify-center w-[600px] h-[286.5px] gap-[20px] w-auto h-auto">
                 <Thumbnail src={videos[currentVideo]} autoPlay={true}/>
                 <div className="sm:w-[283.85px] md:w-[283.85px] lg:w-auto ">

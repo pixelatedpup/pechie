@@ -9,7 +9,7 @@ const Info = () =>{
             <section className="flex lg:flex-row-reverse lg:gap-5 gap-10 flex-col-reverse  justify-center ">
 
                 <article className="flex flex-1a ">
-                    <div className=" w-auto h-auto bg-black rounded-xl p-[30px]">
+                    <div className=" w-auto h-auto bg-[var(--darker)] rounded-xl p-[30px]">
                         <h4 className="text-white">
                             Hi, I’m <strong className="text-[var(--primary)]">Peter Chiemeka (PECHIE) </strong>— a Computer Science graduate with a passion for Frontend Engineering and UX/UI Design.
                             Over the past two years, I’ve built projects with JavaScript, TypeScript, Python, and C++, both during and after my studies. I’m curious, driven, and always willing to put in the work to bring ideas to life.
