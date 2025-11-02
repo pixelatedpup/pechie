@@ -37,19 +37,19 @@ const Content = ({title="Luna Comics",github,figma,deploy, description,tags,vide
             <div className="flex flex-col flex-1 items-center gap-[5px] mt-[20px] w-auto">
                 {!small &&
                 <h2 className="text-white text-regular text-center">{title ?? "Luna Comics"}</h2>}
-                <Button text="DEPLOY" link={deploy}/>
+                <Button text="OPEN" link={deploy}/>
             </div>
                 <section className="flex justify-center  mt-[8px] p-[20px]">
                     <Description>
                         <div className="flex flex-col gap-5 py-[20px] px-[20px]">
                             <article className="flex flex-col gap-5">
-                                <h3 className="flex justify-start">Tools</h3>
+                                {/* <h3 className="flex justify-start">Tools</h3> */}
                                 
                                 {tags && (
                                 <div className="flex  ">
                                     <ul className="flex items-center lg:gap-5 gap-[6px] flex-wrap w-full ">
                                         {tags.map((tag) => (
-                                            <div className="bg-[var(--greyC)] rounded-xl text-white h-[24px] flex items-center justify-center" >
+                                            <div className="bg-[var(--greyC)] rounded-xl text-[var(--darkC)] h-[24px] flex items-center justify-center" >
                                                 <li className="text-center px-[12px] " key={tag}><div className="text-[13px] lg:text-[14px]">{tag}</div></li>
                                             </div>
                                         ))}

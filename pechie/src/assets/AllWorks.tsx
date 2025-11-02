@@ -19,6 +19,12 @@ import mockupSun from "./workVideos/lofi-sunset.mp4"
 
 
 const demoArch = "https://res.cloudinary.com/dhlboslsy/video/upload/v1760485751/New_arc_v0obbq.mp4";
+const demoMyClover = "https://drive.google.com/file/d/1-LnBJiKhywVO-QPPZiKSKHnXb4t46tjV/preview";
+
+
+const lofiMyClover = "";
+const mockupMyClover = "";
+
 
 
 export const works = [
@@ -58,13 +64,13 @@ export const works = [
 
         {   
         id:4, 
-        name:"Sunset Cinemas", 
+        name:"myClover", 
         deploy:"sample", 
-        tags:["Figma"], 
-        description:"A mobile application that allows movie enthusiasts to order snacks and accumulate credits to help with discounted prices.",
+        tags:["Figma", "TypeScript", "React Native", "JavaScript", "MongoDB"], 
+        description:"A mobile application that tracks reading habits of users and keeps a catalogue of their books. Made in React Native and TypeScript",
         github:"",
         figma:"https://www.figma.com/design/WOFTb63byDA1zXHgfyuEkS/Sunset-Cinemas?node-id=46-194&t=h6mjttNQwib45vOQ-1",
-        videos:[mockupSun,lofiSun, " "]
+        videos:[demoMyClover,lofiMyClover, mockupMyClover]
     
     },
 ]

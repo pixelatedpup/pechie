@@ -15,7 +15,7 @@ type NavBarProps = {
 
 const NavBar = ({works=[], onSelect}:NavBarProps) =>{
     const [active, setActive] = useState(works[0].name);
-    const [hovering, setHovering] = useState(false);
+    const [hovering, setHovering] = useState<number|null>(null);
 
     const handleActive = (item:string) =>{
         setActive(item);
@@ -31,11 +31,12 @@ const NavBar = ({works=[], onSelect}:NavBarProps) =>{
                     const isActive = work.name === active;
                     return(
                         <>
-                    <li key={index}>
-                        <div 
-                        onMouseEnter={()=>setHovering(true)} 
-                        onMouseLeave={()=>setHovering(false)} 
+                    <li key={index} >
+                        <div key={index}
+                         onMouseEnter={()=>setHovering(index)}
+                        onMouseLeave={()=>setHovering(null)} 
                         onClick={() => {handleActive(work.name)}} 
+                        
                         className="flex flex-row ">
                             <div className={`w-[33px] h-[33px] ${hovering && isActive?'-translate-x-4':'translate-x-0'} transition-all duration-[200ms]`}>
                                 {isActive && <img src={arrow} />}
